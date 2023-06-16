@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "veb-lab",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "serve": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

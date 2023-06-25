@@ -1,0 +1,12 @@
+PUT  /API/models/6498bb022caba341966c2455?userKey=23 HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+
+{
+    "userName": "Margo",
+    "modelName": "Ovak",
+    "type": "figure",
+    "object":"lf-lf-lf-lf",
+    "description":"balabolka",
+    "comments":[11]
+}

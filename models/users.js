@@ -17,4 +17,4 @@ date:{
 },
 {versionKey: false});
 
-module.exports = db.model ('comments', schema);
+module.exports = db.model ('users', schema);

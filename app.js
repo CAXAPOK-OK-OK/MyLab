@@ -1,4 +1,7 @@
 const express = require('express');
+const morgan = require("morgan");
+const helmet = require("helmet");
+
 
 const HOST = '127.0.0.1'
 const PORT = 3000;
@@ -8,6 +11,7 @@ const dbAPI = require('./controllers/controller.js')
 
 app.use('/API', dbAPI);
 app.use(express.static('./public'));
+app.use(morgan('tiny'));
 
 app.listen(PORT, HOST, () => {
     console.log(`Server is online on ${HOST}:${PORT}\nURL: http://www.localhost:${PORT}/API/1\nor\nURL: http://www.localhost:${PORT}/API/2`);
@@ -21,7 +25,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.use((req, res) => {
-    res.status(400).send('"Несуществующий url"')
+    res.status(400).send('Несуществующий url')
 })
 
 
